@@ -13,11 +13,11 @@ Our Classification Analysis kernel consists of 5 steps:
 ### Step 1 - Import Libraries and Data Set:
 in addition to the scikit-learn library whhich we use to perform the classification analysis, we also use several other packages and modules:
 
--**Pandas**:used for data structures and operations for manipulating numerical tables
--**Numpy**: used for numerical analysis
--**matplotlib.pyplot**: used for plotting data
--**seaborn**: used for data visualization (used on top of matplotlib library)
--**sklearn**: used in our kernel to split the set into a training and a testing set, to create the model, to perform grid search to find the best hyper parameters, and to visualize the results.
+- **Pandas**:used for data structures and operations for manipulating numerical tables
+- **Numpy**: used for numerical analysis
+- **matplotlib.pyplot**: used for plotting data
+- **seaborn**: used for data visualization (used on top of matplotlib library)
+- **sklearn**: used in our kernel to split the set into a training and a testing set, to create the model, to perform grid search to find the best hyper parameters, and to visualize the results.
 
 We import the data from a csv file, and we load it into a pandas DataFrame object.
 
