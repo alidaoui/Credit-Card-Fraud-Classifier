@@ -1,5 +1,5 @@
-# Credit Card Fraud Classifier
-Project to classify bank transactions into legitimate and fraudulent.
+# Credit Card Fraud Detector
+The goal of this project is to create a classifier which classify bank transactions into legitimate and fraudulent.
 Data is widely available online. Example: https://www.kaggle.com/mlg-ulb/creditcardfraud.
 
 About this data set:
@@ -39,7 +39,7 @@ We choose the most valualble features, and we split our data set into a training
 - **y_test**:	Contains Dependent variables used for testing
 
 ### Step 4 - Train Model
-We instantiate an object from the sklearn's GaussianNB module and we fit it to our data.
+To create the Naïve Bayes Model, we instantiate an object from the sklearn's GaussianNB module and we fit it to our data.
 
 ### Step 5 - Evaluate Model:
 We classify the data and we use a confusion matrix to visualize results. We also generate a classification report which gives you the f1 score.
