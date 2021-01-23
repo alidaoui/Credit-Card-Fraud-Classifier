@@ -17,7 +17,7 @@ in addition to the scikit-learn library whhich we use to perform the classificat
 - **Numpy**: used for numerical analysis
 - **matplotlib.pyplot**: used for plotting data
 - **seaborn**: used for data visualization (used on top of matplotlib library)
-- **sklearn**: used in our kernel to split the set into a training and a testing set, to create the model, to perform grid search to find the best hyper parameters, and to visualize the results.
+- **sklearn**: used in our kernel to split the set into a training and a testing set, to create the model, and to visualize the results.
 
 We import the data from a csv file, and we load it into a pandas DataFrame object.
 
@@ -26,8 +26,12 @@ We check our data for null values, and we check if there is any correlation betw
 
 ![Correlation Matrix](corr.png)
 
+To perform feature selection, we create a series of graphs for each feature from V1 to V28 in addition to Time and Amount, and we use the target as the hue in order to determine if the feature adds value to the model.
+
+![Feature Selection Graphs](separate.png)
+
 ### Step 3 - Create Training and Testing Set: 
-We split our data set into a training and testing sets. We use 20% for testing the classifier:
+We choose the most valualble features, and we split our data set into a training and testing sets. We use 20% for testing the classifier:
 
 - **X_train**: Contains the independent variables used for training
 - **y_train**: Contains the dependent variables used for training
